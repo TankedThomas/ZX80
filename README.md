@@ -64,6 +64,8 @@ The PCB is at a very early stage, and cannot be completed as the wiring of the s
 As I am a novice with KiCad, I welcome any and all help to make this a workable board.  
 The traces will be rounded to match the hand-drawn originals on the final version, but any existing traces are simply there for testing purposes and are not final.
 
+![WIP PCB](https://raw.githubusercontent.com/TankedThomas/ZX80/master/Docs/ZX80_Board.png)
+
 Martin's PCB foils are included as a separate PCB file which could in theory be used to print a working replica board (but should not be used, as they are incomplete - the alignment of the two layers isn't perfect, drill holes are not marked, and planes have not been added).
 
 I have created custom footprint and symbol libraries for this project so that any standard parts which needed modification (such as the ICs) to match the original schematic are provided, and to provide parts that wouldn't otherwise exist (such as the Astec UM1233 RF Modulator - more on this later).  
