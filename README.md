@@ -50,7 +50,7 @@ Martin mentioned two corrections he made but does not elaborate, so I will have 
 
 Therefore, both sets of PCB foils are included in this repository as reference material and the copyright belongs to their respective aforementioned owners.
 
-I have also included realitively high quality scans of the original [assembly](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part1.jpg) [guide](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part2.jpg) (will add the source when I find it again), which has some contradictions to the oft-seen "original" schematic (including the one Grant provides), such as `C12` being `100nF` instead of `47nF`, and the ROM being a `2332` instead of an `8332`, and I have chosen to use the differences from this version instead as it appears to make more sense to me.
+I have also included relatively high quality scans of the original [assembly](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part1.jpg) [guide](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part2.jpg) (will add the source when I find it again), which has some contradictions to the oft-seen "original" schematic (including the one Grant provides), such as `C12` being `100nF` instead of `47nF`, and the ROM being a `2332` instead of an `8332`, and I have chosen to use the differences from this version instead as it appears to make more sense to me.
 
 Finding high-resolution photos of the original PCB is quite difficult, but I have [included one that Grant supplied](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80Iss2.jpg) as it has been invaluable (albeit imperfect) to me so far.
 
