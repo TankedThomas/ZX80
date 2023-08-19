@@ -60,6 +60,8 @@ The replica keypad was made by using a screenshot from Grant's foils and then tr
 
 Currently, [the schematic](https://github.com/TankedThomas/ZX80/blob/master/Docs/zx80_schematic_kicad.pdf) is more or less complete though not visually identical to the original.
 
+![Schematic](https://raw.githubusercontent.com/TankedThomas/ZX80/master/Docs/ZX80_Schematic.png)
+
 The PCB is at a very early stage, and cannot be completed as the wiring of the schematic does not work in modern PCB CAD software, so tweaks will have to be made.  
 As I am a novice with KiCad, I welcome any and all help to make this a workable board.  
 The traces will be rounded to match the hand-drawn originals on the final version, but any existing traces are simply there for testing purposes and are not final.
