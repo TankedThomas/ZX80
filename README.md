@@ -1,4 +1,4 @@
-![Sinclair ZX80 Logo](https://user-images.githubusercontent.com/TankedThomas/ZX80/sinclair_zx80_logo.svg)
+![Sinclair ZX80 Logo](https://raw.githubusercontent.com/TankedThomas/ZX80/master/sinclair_zx80_logo.svg)
 Inaccurate logo recreation by me, using Wikipedia's SVG Sinclair logo as a base.
 
 # Sinclair ZX80 Replica
