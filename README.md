@@ -5,17 +5,17 @@
 
 This repository contains my work-in-progress effort to recreate the Sinclair ZX80.
 
-[Project Goals](#project-goals)
-[Future Goals](#future-goals)
-[Software](#software)
-[Project Status](#project-status)
-	[Case](#case)
-	[RF Modulator](#rf-modulator)
-[Current Mysteries](#current-mysteries)
-[Contributing](#contributing)
-[Licensing](#licensing)
+[Project Goals](#project-goals)  
+[Future Goals](#future-goals)  
+[Software](#software)  
+[Project Status](#project-status)  
+	[Case](#case)  
+	[RF Modulator](#rf-modulator)  
+[Current Mysteries](#current-mysteries)  
+[Contributing](#contributing)  
+[Licensing](#licensing)  
 
-## Project Goals {#project-goals}
+## Project Goals
 
 My goal is to recreate the original ZX80 schematic and PCB as accurately as possible in modern software so that replicas can be made via PCB manufacturers such as [JLCPCB](https://jlcpcb.com) and [PCBWay](https://www.pcbway.com).
 
@@ -25,7 +25,7 @@ This is both to preserve this piece of computing history and also make it access
 
 I also plan to document the differences for the 60Hz (USA) variant, as the changes are primarily the addition or substitution of a small number of components, but this is very poorly documented as of now.
 
-## Future Goals {#future-goals}
+## Future Goals
 
 Upon completion of this project, I would like to add a modified version that uses composite video with a built-in backporch, as well as other possibilities such as a 50Hz/60Hz switch.  
 I would also like to add in the ZX81 modifications as an option for those who wanted an upgraded ZX80 i.e. a ZX81 in a ZX80 case and form factor.  
@@ -35,7 +35,7 @@ Hopefully, the schematics can be submitted to the awesome [Bit Preserve](https:/
 
 Finally, this is to be the first of (hopefully) many vintage computer replica projects from me, assuming everything goes smoothly.
 
-## Software {#software}
+## Software
 
 All my work has been undertaken using [KiCad](https://www.kicad.org/).
 
@@ -56,7 +56,7 @@ Finding high-resolution photos of the original PCB is quite difficult, but I hav
 
 The replica keypad was made by using a screenshot from Grant's foils and then tracing it in Adobe Illustrator, so I have included the original Illustrator file in this repository.
 
-## Project Status {#project-status}
+## Project Status
 
 Currently, the schematic is more or less complete though not visually identical to the original.
 
@@ -72,7 +72,7 @@ Some work still needs to be done, especially for component spacing (and especial
 A parts list is available as a CSV, though it is not completed yet (primarily the capacitors and the RAM/ROM ICs).  
 Grant's parts list has some mistakes which I have corrected (to be detailed at a later date), and I am working on adding information about all the 60Hz-only components to the list as well.  
 
-#### Case {#case}
+#### Case
 
 A 3D-printable case is available, with [Spinetti's version](https://www.printables.com/model/490727-sinclair-zx80-replica-case) appearing to be the best so far.
 
@@ -80,7 +80,7 @@ The (supposedly) correct rivets can be had from AliExpress.
 There are meant to be two sizes of rivets used in the ZX80, with one size having both black and white rivets, whereas the other size only has white rivets.  
 I will add information in the future once I can test these for myself.
 
-#### RF Modulator {#rf-modulator}
+#### RF Modulator
 
 Astec's somewhat ubiquitous UM1233 UHF RF Modulator is an interesting footnote in this project. I have not managed to find any third-party KiCad libraries for this part and so I have recreated it myself to match the original ZX80 schematic.  
 
@@ -92,7 +92,7 @@ If anyone would like to make a proper 3D model of the modulator, please let me k
 In the interim, I am working on (and almost finished) recreating the UM1233 itself with KiCad so that at least there is a solid point of reference.  
 These things are getting harder to come by, and in some cases, weren't used outside of European countries (e.g. the New Zealand and possibly Australian ZX81 used the USA VHF modulator from Astec instead, which has the RF jack on the opposite side of the modulator).
 
-## Current Mysteries {#current-mysteries}
+## Current Mysteries
 
 - What was the original ROM chip used?  
 One version of the Issue 2 schematic calls it an 8332 (of which I cannot find concrete evidence this even existed), and the other calls it a 2332.  
@@ -121,12 +121,12 @@ There are photos floating around of 60Hz versions so this could be reverse-engin
 
 If I think of more unknowns (at least to me), I'll add them later. Feel free to open an issue to contribute your own if you think it's crucial.
 
-## Contributing {#contributing}
+## Contributing
 
 The further I get with this project, the more daunting it seems, as there is a ton of work left to do, and replicating something not designed in modern software with the limitations of modern software is surprisingly difficult.  
 Therefore, if you would like to help, please feel free to open an issue if you find an obvious correction needs to be made (please don't do this for WIP parts unless you see a fatal error - they're obviously a work-in-progress for a reason), or make a pull request with any edits.
 
-## Licensing {#licensing}
+## Licensing
 
 I will have to add this properly when I get more time in the future.  
 In short:
