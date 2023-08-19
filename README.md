@@ -19,9 +19,9 @@ This repository contains my work-in-progress effort to recreate the Sinclair ZX8
 
 My goal is to recreate the original ZX80 schematic and PCB as accurately as possible in modern software so that replicas can be made via PCB manufacturers such as [JLCPCB](https://jlcpcb.com) and [PCBWay](https://www.pcbway.com).
 
-Obviously this has been done before, but I have yet to find an open-source replica - most other versions, especially the open-source ones, take liberties with the original design (usually to improve it or to make use of modern, easier-to-obtain components).
-
 This is both to preserve this piece of computing history and also make it accessible to those of us who don't have $1k+ to spend on an original machine of infamously dubious Sinclair quality.
+
+Obviously this has been done before, but I have yet to find an open-source replica - most other versions, especially the open-source ones, take liberties with the original design (usually to improve it or to make use of modern, easier-to-obtain components).
 
 I also plan to document the differences for the 60Hz (USA) variant, as the changes are primarily the addition or substitution of a small number of components, but this is very poorly documented as of now.
 
@@ -50,15 +50,15 @@ Martin mentioned two corrections he made but does not elaborate, so I will have 
 
 Therefore, both sets of PCB foils are included in this repository as reference material and the copyright belongs to their respective aforementioned owners.
 
-I have also included realitively high quality scans of the original assembly guide, which has some contradictions to the oft-seen "original" schematic (including the one Grant provides), such as C12 being 100nF instead of 47nF, and the ROM being a 2332 instead of an 8332, and I have chosen to use the differences from this version instead as it appears to make more sense to me.
+I have also included realitively high quality scans of the original [assembly](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part1.jpg) [guide](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80_Assembly_Part2.jpg) (will add the source when I find it again), which has some contradictions to the oft-seen "original" schematic (including the one Grant provides), such as `C12` being `100nF` instead of `47nF`, and the ROM being a `2332` instead of an `8332`, and I have chosen to use the differences from this version instead as it appears to make more sense to me.
 
-Finding high-resolution photos of the original PCB is quite difficult, but I have included one that Grant supplied as it has been invaluable (albeit imperfect) to me so far.
+Finding high-resolution photos of the original PCB is quite difficult, but I have [included one that Grant supplied](https://github.com/TankedThomas/ZX80/blob/master/Docs/ZX80Iss2.jpg) as it has been invaluable (albeit imperfect) to me so far.
 
 The replica keypad was made by using a screenshot from Grant's foils and then tracing it in Adobe Illustrator, so I have included the original Illustrator file in this repository.
 
 ## Project Status
 
-Currently, the schematic is more or less complete though not visually identical to the original.
+Currently, [the schematic](https://github.com/TankedThomas/ZX80/blob/master/Docs/zx80_schematic_kicad.pdf) is more or less complete though not visually identical to the original.
 
 The PCB is at a very early stage, and cannot be completed as the wiring of the schematic does not work in modern PCB CAD software, so tweaks will have to be made.  
 As I am a novice with KiCad, I welcome any and all help to make this a workable board.  
@@ -69,7 +69,9 @@ Martin's PCB foils are included as a separate PCB file which could in theory be 
 I have created custom footprint and symbol libraries for this project so that any standard parts which needed modification (such as the ICs) to match the original schematic are provided, and to provide parts that wouldn't otherwise exist (such as the Astec UM1233 RF Modulator - more on this later).  
 Some work still needs to be done, especially for component spacing (and especially the ceramic capacitors), and a lot of rejigging of the silkscreen is still required.
 
-A parts list is available as a CSV, though it is not completed yet (primarily the capacitors and the RAM/ROM ICs).  
+![Recreated ZX80 Keypad](https://raw.githubusercontent.com/TankedThomas/ZX80/master/Components/ZX80_Key.png)  
+
+A [parts list is available as a CSV](https://raw.githubusercontent.com/TankedThomas/ZX80/master/Docs/zx80_parts_list.csv), though it is not completed yet (primarily the capacitors and the RAM/ROM ICs).  
 Grant's parts list has some mistakes which I have corrected (to be detailed at a later date), and I am working on adding information about all the 60Hz-only components to the list as well.  
 
 #### Case
@@ -87,39 +89,42 @@ Astec's somewhat ubiquitous UM1233 UHF RF Modulator is an interesting footnote i
 However, KiCad doesn't handle the logic of this part particularly well, so I've had to implement some work-arounds. If you have a better solution, please feel free to correct it yourself or let me know what can be done.  
 
 Also, I cannot 3D model whatsoever, so I picked a similarly-shaped component's 3D model and stretched it into an approximately appropriate shape.  
-If anyone would like to make a proper 3D model of the modulator, please let me know. I have original UHF and VHF modulators from Astec which I can measure if need be.  
+If anyone would like to make a proper 3D model of the modulator, please let me know.  
+I have original UHF and VHF modulators from Astec which I can measure if need be.  
 
 In the interim, I am working on (and almost finished) recreating the UM1233 itself with KiCad so that at least there is a solid point of reference.  
-These things are getting harder to come by, and in some cases, weren't used outside of European countries (e.g. the New Zealand and possibly Australian ZX81 used the USA VHF modulator from Astec instead, which has the RF jack on the opposite side of the modulator).
+These things are getting harder to come by, and in some cases, weren't used outside of European countries (e.g. the New Zealand and possibly Australian ZX81 used the USA VHF modulator from Astec instead, which has the RF jack on the opposite side of the modulator).  
+Expect a repo for the UM1233 in the near future.
 
 ## Current Mysteries
 
 - What was the original ROM chip used?  
-One version of the Issue 2 schematic calls it an 8332 (of which I cannot find concrete evidence this even existed), and the other calls it a 2332.  
+&nbsp;&nbsp;One version of the Issue 2 schematic calls it an 8332 (of which I cannot find concrete evidence this even existed), and the other calls it a 2332.  
 I have seen various other names thrown around, such as the TMS4732 (Texas Instruments 32k) and D2364C (64k, made by NEC I believe - seems likely this was used for the upgrade ROM i.e. the ZX81 ROM, not the original, as it's twice the required size).
 
 - Why do many components seem to be of a non-standard size?  
-Assuming the foil sizing in KiCad is correct (which it seems to be, but I'm not certain), many KiCad footprints don't line up with the vias on the foils.  
+&nbsp;&nbsp;Assuming the foil sizing in KiCad is correct (which it seems to be, but I'm not certain), many KiCad footprints don't line up with the vias on the foils.  
 This may be due to how the original PCB was designed, where they weren't worried about making it an exact match for any one size (e.g. because the legs of components such as diodes and resistors are much longer than necessary anyway, so sizing leeway between each component is fine... until you try to replicate it with modern software).
 
 - Can the power and ground pins for all the ICs that are not marked on the original schematic be hidden (instead of sitting off the bottom of the page) in the KiCad schematic without upsetting KiCad's Electrical Rules Checker?
 
 - How can the address lines be connected like the original schematic without causing problems in KiCad?  
-Kind of a major issue - this ties most of the address lines together, which isn't really correct (look at the rear PCB foil for a good example of how they're meant to linked). This throws all sorts of errors in KiCad, including making the PCB layout an inaccurate mess.
+&nbsp;&nbsp;Kind of a major issue - this ties most of the address lines together, which isn't really correct (look at the rear PCB foil for a good example of how they're meant to linked). This throws all sorts of errors in KiCad, including making the PCB layout an inaccurate mess.
 
 - Is ~{SYNC} used anywhere outside of IC19 pin 6?  
 
 - Why the discrepancy between schematics (especially since both are for Issue 2)?
 
 - What is the correct value for TR1?  
-Supposedly, it should be a ZTX329.
+&nbsp;&nbsp;Supposedly, it should be a ZTX329.
 
 - Why is a net label required for `A8'` to connect properly on IC2 (ROM) pin 23 when no other address lines appear to have this issue?
 
 - What are the missing values for the 60Hz parts?  
-There are photos floating around of 60Hz versions so this could be reverse-engineered from those, as I have done for some of the known values (check the parts list CSV).
+&nbsp;&nbsp;There are photos floating around of 60Hz versions so this could be reverse-engineered from those, as I have done for some of the known values (check the parts list CSV).
 
-If I think of more unknowns (at least to me), I'll add them later. Feel free to open an issue to contribute your own if you think it's crucial.
+If I think of more unknowns (at least to me), I'll add them later.  
+Feel free to open an issue to contribute your own if you think it's crucial.
 
 ## Contributing
 
