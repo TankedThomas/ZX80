@@ -1,0 +1,60 @@
+ERC report (20/08/2023 11:52:15 pm, Encoding UTF8)
+
+***** Sheet /
+[multiple_net_names]: Both 0V and RING are attached to the same items; 0V will be used in the netlist
+    ; Severity: warning
+    @(33.0200 mm, 20.3200 mm): Global Label '0V'
+    @(193.0400 mm, 24.1300 mm): Symbol J3 Hidden pin R [RING, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; Severity: error
+    @(134.6200 mm, 99.0600 mm): Symbol IC1 Pin 11 [VCC, Power input, Line]
+[multiple_net_names]: Both A6 and ~{INT} are attached to the same items; A6 will be used in the netlist
+    ; Severity: warning
+    @(73.6600 mm, 20.3200 mm): Global Label 'A6'
+    @(125.7300 mm, 78.7400 mm): Global Label '~{INT}'
+[endpoint_off_grid]: Symbol pin or wire end off grid
+    ; Severity: warning
+    @(300.9900 mm, 201.2950 mm): Symbol IC21 Hidden pin 12 [QA, Unconnected, Line]
+[endpoint_off_grid]: Symbol pin or wire end off grid
+    ; Severity: warning
+    @(274.3200 mm, 252.0950 mm): Symbol IC18 Hidden pin 5 [Q, Unconnected, Line]
+[global_label_dangling]: Global label not connected anywhere else in the schematic
+    ; Severity: warning
+    @(328.9300 mm, 254.0000 mm): Global Label '~{SYNC}'
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; Severity: error
+    @(45.7200 mm, 111.7600 mm): Symbol IC3 Pin 8 [~{RAMCS}, Input, Line]
+[multiple_net_names]: Both 5V and ~{NMI} are attached to the same items; 5V will be used in the netlist
+    ; Severity: warning
+    @(25.4000 mm, 20.3200 mm): Global Label '5V'
+    @(97.7900 mm, 152.4000 mm): Label '~{NMI}'
+[pin_to_pin]: Pins of type Tri-state and Open collector are connected
+    ; Severity: warning
+    @(44.4500 mm, 166.3700 mm): Symbol IC10 Pin 13 [D4, Tri-state, Line]
+    @(39.3700 mm, 210.8200 mm): Symbol IC14 Pin 8 [Open collector, Inverted]
+[pin_to_pin]: Pins of type Tri-state and Open collector are connected
+    ; Severity: warning
+    @(44.4500 mm, 168.9100 mm): Symbol IC10 Pin 5 [D3, Tri-state, Line]
+    @(49.5300 mm, 210.8200 mm): Symbol IC14 Pin 6 [Open collector, Inverted]
+[pin_to_pin]: Pins of type Output and Output are connected
+    ; Severity: error
+    @(71.1200 mm, 190.5000 mm): Symbol IC9 Pin 7 [~{Q}, Output, Line]
+    @(78.7400 mm, 190.5000 mm): Symbol IC9 Pin 9 [Q, Output, Line]
+[pin_to_pin]: Pins of type Open collector and Tri-state are connected
+    ; Severity: warning
+    @(69.8500 mm, 210.8200 mm): Symbol IC15 Pin 4 [Open collector, Inverted]
+    @(44.4500 mm, 158.7500 mm): Symbol IC10 Pin 3 [D7, Tri-state, Line]
+[pin_to_pin]: Pins of type Open collector and Tri-state are connected
+    ; Severity: warning
+    @(80.0100 mm, 210.8200 mm): Symbol IC14 Pin 4 [Open collector, Inverted]
+    @(44.4500 mm, 173.9900 mm): Symbol IC10 Pin 7 [D1, Tri-state, Line]
+[pin_to_pin]: Pins of type Open collector and Tri-state are connected
+    ; Severity: warning
+    @(59.6900 mm, 210.8200 mm): Symbol IC14 Pin 10 [Open collector, Inverted]
+    @(44.4500 mm, 171.4500 mm): Symbol IC10 Pin 11 [D2, Tri-state, Line]
+[pin_to_pin]: Pins of type Open collector and Tri-state are connected
+    ; Severity: warning
+    @(90.1700 mm, 210.8200 mm): Symbol IC14 Pin 2 [Open collector, Inverted]
+    @(44.4500 mm, 176.5300 mm): Symbol IC10 Pin 9 [D0, Tri-state, Line]
+
+ ** ERC messages: 15  Errors 3  Warnings 12
