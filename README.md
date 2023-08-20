@@ -9,7 +9,7 @@ This repository contains my work-in-progress effort to recreate the Sinclair ZX8
 
 [Project Goals](#project-goals)  
 [Future Goals](#future-goals)  
-[Software](#software) 
+[Software](#software)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Previous Work](#previous-work)  
 [Project Status](#project-status)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Schematics](#schematics)  
