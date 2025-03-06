@@ -5,7 +5,7 @@
 
 This repository contains my work-in-progress effort to recreate the Sinclair ZX80.
 
-[Changelog](https://raw.githubusercontent.com/TankedThomas/ZX80/master/CHANGELOG.md) (Last updated 21/08/23)  
+[Changelog](https://raw.githubusercontent.com/TankedThomas/ZX80/master/CHANGELOG.md) (Last updated 07/03/2025)  
 
 [Project Goals](#project-goals)  
 [Future Goals](#future-goals)  
@@ -72,6 +72,12 @@ Finding high-resolution photos of the original PCB is quite difficult, but I hav
 
 The replica keypad was made by using a screenshot from Grant's foils and then tracing it in Adobe Illustrator, so I have included the original Illustrator file in this repository.
 
+As of 2025, there are now two other recreations that other people have made. 
+First is [Qiqitori](https://blog.qiqitori.com/2024/03/building-a-new-zx80/), who has taken a different approach to recreating the PCB than me but has a finished product. This is pretty good if you want a mostly accurate replica now, though I'm not 100% happy with it (we'll say 99% - I'm a perfectionist).
+Then there is [Emilio Aoi](https://ekaww4.wixsite.com/tecnologia/post/projeto-5-sinclair-zx80), who also has a finished board that's a fairly close replica, but he took some liberties with the keyboard and the video circuit. If you're after a ZX80 clone that'll work on a modern display and not feel like you're typing on a plank of wood, you can even get his PCBs directly from [PCBWay](https://www.pcbway.com/project/shareproject/ZX80_SINCLAIR_REPLICA_066e073d.html).
+Please note that I'm not affiliated with nor have I ever talked to either individual, but their work is definitely good. 
+My own project will still continue, however, but it will take a while longer, especially after a recent data loss problem (the UM1233 work will have to be restarted, unfortunately, but I have some better ideas for recreating it properly now).
+
 ## Project Status
 
 #### Schematics
@@ -132,7 +138,8 @@ See [ERC.rpt](https://raw.githubusercontent.com/TankedThomas/ZX80/master/Docs/ER
 - **What was the original ROM chip used?**  
 &nbsp;&nbsp;One version of the Issue 2 schematic calls it an 8332 (of which I cannot find concrete evidence this even existed), and the other calls it a 2332.  
 I have seen various other names thrown around, such as the TMS4732 (Texas Instruments 32k) and D2364C (64k, made by NEC I believe - seems likely this was used for the upgrade ROM i.e. the ZX81 ROM, not the original, as it's twice the required size).  
-[Martin suggests](https://www.8bity.cz/zx80-replika/navod-na-stavbu-repliky-zx80/) that the original ROMs were on an 8332 or TMS4732, with the D2364C indeed used for the ZX80 to ZX81 upgrade.
+[Martin](https://www.8bity.cz/zx80-replika/navod-na-stavbu-repliky-zx80/) suggests that the original ROMs were on an 8332 or TMS4732, with the D2364C indeed used for the ZX80 to ZX81 upgrade.
+On the other hand, [Grant](http://searle.x10host.com/zx80/zx80.html#Using%20Alternative%20Components) says his original ZX80 used a 2532 with a snipped leg connected to VCC - was this how the EPROM was originally supplied, or is this a replacement/modification made after the fact?
 
 - **Why do many components seem to be of a non-standard size?**  
 &nbsp;&nbsp;Assuming the foil sizing in KiCad is correct (which it seems to be, but I'm not certain), many KiCad footprints don't line up with the vias on the foils.  
@@ -157,7 +164,7 @@ It's clever once you figure it out, but it would be nice if the bus-to-wire conn
 &nbsp;&nbsp;Supposedly, it should be a ZTX329.
 
 - ~~**Why is a net label required for `A8'` to connect properly on IC2 (ROM) pin 23 when no other address lines appear to have this issue?**~~  
-&nbsp;&nbsp;It's there on the schematic but is on the IC6 side (pin 4) instead. The ZX80 schematic doesn't have unique pin names for most ICs hence the need to define with with a label.
+&nbsp;&nbsp;It's there on the schematic but is on the IC6 side (pin 4) instead. The ZX80 schematic doesn't have unique pin names for most ICs hence the need to define with a label.
 
 - **What are the missing values for the 60Hz parts?**  
 &nbsp;&nbsp;There are photos floating around of 60Hz versions so this could be reverse-engineered from those, as I have done for some of the known values (check the parts list CSV).
