@@ -3189,10 +3189,6 @@
         (name "C" (effects (font (size 1.27 1.27))))
         (number "8" (effects (font (size 1.27 1.27))))
       )
-      (pin no_connect line (at -10.16 2.54 0) (length 5.08) hide
-        (name "NC" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
       (pin output line (at 10.16 11.43 180) (length 5.08)
         (name "B" (effects (font (size 1.27 1.27))))
         (number "9" (effects (font (size 1.27 1.27))))
